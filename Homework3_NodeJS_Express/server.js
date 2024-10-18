@@ -4,6 +4,9 @@ const path = require(`path`);
 
 const app = express();
 
+app.use(express.static('static'));
+
+
 const counterfilePath = "./counter.txt";
 
 app.get(`/`, (req, res) => {
